@@ -1,8 +1,9 @@
-@import "../../vars.css";
+/* @import "../../vars.css"; */
 
+/* Styles for the Container */
 .container {
   padding: 150px 0;
-  background-color: var(--color-bg);
+  background-color: var(--container-color);
   margin: auto;
 }
 
@@ -10,6 +11,7 @@
   display: flex;
   max-width: 980px;
   width: 100%;
+  gap: 3rem;
   margin: auto;
   align-items: center;
 }
@@ -18,14 +20,15 @@
   flex: 1;
   width: 100%;
   border-radius: 2px;
-  padding-right: 3rem;
-  position: relative; /* Required for positioning the shadow box */
-  overflow: hidden; /* Hide any overflowing shadow */
+  position: relative;
+  overflow: hidden;
 }
 
 .imgSide img {
   border-radius: 1.7rem;
   width: 100%;
+  object-fit: cover;
+  height: 350px;
 }
 
 .textSide {
@@ -42,7 +45,7 @@
 }
 
 .textSide h4 {
-  color: var(--color-text);
+  color: var(--title-color);
   font-size: 1.5rem;
   line-height: 1.1;
   font-family: Poppins, sans-serif;
@@ -56,6 +59,7 @@
   line-height: 1.5;
 }
 
+/* Media Query for Small Screens */
 @media screen and (max-width: 830px) {
   .container {
     padding: 50px 0;
@@ -70,17 +74,10 @@
   .imgSide {
     width: 100%;
     padding-right: 0;
-    margin-bottom: 1rem; /* 增加图片与文字之间的间距 */
   }
 
-  /* .imgSide {
-    flex: 1;
-    border-radius: 2px;
-    padding-right: 1rem;
-  } */
-
   .textSide {
-    width: 100%; /* 限制文本的最大宽度 */
-    margin: 0 auto; /* 在移动端居中文本 */
+    width: 100%;
+    margin: 0 auto;
   }
 }

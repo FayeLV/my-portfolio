@@ -1,8 +1,10 @@
+/* Import variables from vars.css */
 @import "../../vars.css";
 
+/* Styling for the main container */
 .container {
   background-color: var(--color-primary);
-  padding: 4rem 0;
+  padding-top: 4rem;
 }
 
 .content {
@@ -12,13 +14,12 @@
   max-width: 980px;
 }
 
-.content p {
-  color: var(--color-secondary);
+.projectTitle {
+  color: var(--title-color);
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 900;
   margin-bottom: 2rem;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .content h3 {
@@ -30,7 +31,6 @@
 }
 
 .projects {
-  margin: auto;
   max-width: 980px;
   width: 100%;
   padding: 4rem 0;
@@ -39,6 +39,7 @@
 .projectItems {
   display: flex;
   margin-bottom: 4rem;
+  gap: 1rem;
   height: 28rem;
   background-color: var(--color-bg);
   border-radius: 1.7rem;
@@ -47,13 +48,10 @@
 }
 
 .itemsImg {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 1rem;
-
-  /* background-color: hsla(0, 0%, 46%, 0.2); */
-  overflow: hidden;
   border-radius: 1.7rem;
   overflow: hidden;
+  margin-right: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .projectImage {
@@ -69,19 +67,25 @@
   animation: slideUpDown 10s ease-in-out infinite;
 }
 
+/* Keyframes for hover animation */
 @keyframes slideUpDown {
   0%,
   100% {
-    transform: translateY(0%); /* 初始位置 */
+    transform: translateY(0%);
   }
   25% {
-    transform: translateY(-78%); /* 向上移动 */
+    transform: translateY(-78%);
   }
 }
 
 .itemsText {
-  width: 80%;
-  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+
+.itemTextBox {
+  flex: 1;
 }
 
 .itemsText h3 {
@@ -89,15 +93,12 @@
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  text-transform: uppercase;
 }
 
 .itemsText p {
   color: #767676;
   font-size: 1.2rem;
   font-weight: 500;
-  text-align: center;
-  text-transform: none;
 }
 
 .stack {
@@ -117,26 +118,45 @@
   justify-content: space-evenly;
   margin-top: 1.5rem;
 }
-
+/* 
 .links a {
-  display: flex;
   background-color: var(--color-bg);
-  color: var(--color-text);
+  color: var(--title-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-weight: 600;
   padding: 0.5rem;
+  width: 120px;
+  text-align: center;
+} */
+
+.links a {
+  background-color: var(--color-bg);
+  color: var(--title-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  padding: 0.5rem;
+  width: 120px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.links a:hover {
+  background-color: var(--text-color);
+  color: var(--container-color);
 }
 
 @media screen and (max-width: 830px) {
   .container {
-    padding: 10% 10% 0 10%; /* Remove unnecessary padding */
+    padding: 1rem;
+    text-align: center;
   }
+
   .projects {
-    margin: auto;
-    width: 100%;
-    padding: 4rem 0;
     display: flex;
     flex-direction: column-reverse;
+    padding-bottom: 1rem;
   }
 
   .projectItems {

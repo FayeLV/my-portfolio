@@ -3,12 +3,12 @@ import styles from "./Contact.module.css"; // Import your CSS Modules file for s
 
 const Contact = () => {
   return (
-    <section className={styles.contact}>
+    <section id="contact" className={styles.contact}>
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.title}>
             <p>contact</p>
-            <h3>Don't be shy! Hit me up! 👇</h3>
+            <h3>Feel free to reach out to me!👇</h3>
           </div>
           <div className={styles.Icons}>
             <div className={styles.iconBox}>
@@ -27,7 +27,7 @@ const Contact = () => {
               <div className={styles.contactInfo}>
                 <h3>Mail</h3>
                 <a href="mailto:stefan.topallovic@gmail.com">
-                  icewatertexas@gmail.com
+                  faye.l.tech@gmail.com
                 </a>
               </div>
             </div>

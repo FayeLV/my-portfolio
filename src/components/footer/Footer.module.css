@@ -1,9 +1,10 @@
-@import "../../vars.css";
+/* @import "../../vars.css"; */
 
+/* Footer Styles */
 footer {
+  width: 100%;
   background-color: #2d2e32;
   padding: 5rem 0;
-  width: 100%;
 }
 
 .container {
@@ -12,26 +13,38 @@ footer {
   margin: 0 auto;
 }
 
-.Content {
+footer .content {
   display: flex;
   justify-content: space-between;
-  align-self: center;
+  align-items: center;
+}
+
+.content h3 {
+  font-size: 1.2rem;
   color: #fff;
 }
 
-.footerc h3 {
-  color: #fff;
-  font-size: 1.7rem;
+.socialIcons {
+  padding-top: 8px;
 }
 
-.socialLinks {
-  font-weight: 400;
-  padding: 0 1rem;
+.socialLinks a {
+  color: #fff;
+  padding-left: 15px;
+  font-size: 1.2rem;
 }
 
-.socialLinks i {
-  font-size: 2.5rem;
-  font-weight: 400;
-  padding: 0 0.5rem;
-  color: #fff;
+/* Media Query for Small Screens */
+@media screen and (max-width: 830px) {
+  footer {
+    padding: 2.5rem 1rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
 }

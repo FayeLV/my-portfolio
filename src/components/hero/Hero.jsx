@@ -1,47 +1,64 @@
 import React from "react";
 import styles from "./Hero.module.css";
-import heroImage from "../../assets/hero/heroImage.png";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiSass,
+} from "react-icons/si";
 
 const Hero = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
         <div className={styles.heroMain}>
-          <h1>Front-End React Developer</h1>
+          <h1>
+            Front-End React Developer{" "}
+            <span role="img" aria-label="wave">
+              👋
+            </span>
+          </h1>
           <p>
-            Hi, I'm Faye. A passionate Front-end React Developer based in San
-            antonio, Texas. 📍
+            Hi, I'm Faye. A passionate Front-end React Developer based in Texas.
           </p>
-          <span>
+          <div className={styles.socialLinks}>
             <a
               aria-label="linkedin"
               rel="noreferrer"
               target="_blank"
               href="https://www.linkedin.com/in/faye-lyu-79a822147/"
             >
-              <i class="fa-brands fa-linkedin"></i>
+              <FaLinkedin />
             </a>
 
             <a
               aria-label="github"
               rel="noreferrer"
               target="_blank"
-              href="https://github.com/SnowflakesFlutter"
+              href="https://github.com/FayeLV"
             >
-              <i class="fa-brands fa-github"></i>
+              <FaGithub />
             </a>
-            <a
-              href="mailto:myemail@email.com"
-              className={styles.contactBtn}
-            ></a>
-          </span>
+          </div>
         </div>
-        <div className={styles.heroImg}>
-          <img src={heroImage} alt="Hero image of me" />
-          {/* <img
-            src="https://stefantopalovicdev.vercel.app/static/media/pfp_webp.f334283842f7b24cafd1.webp"
-            alt="/"
-          /> */}
+        <div className={styles.heroImg}></div>
+      </div>
+      <div className={styles.techStack}>
+        <span>Tech Stack</span>
+        <div className={styles.icons}>
+          <SiHtml5 title="HTML5" />
+          <SiCss3 title="CSS3" />
+          <SiJavascript title="JavaScript" />
+          <SiTypescript title="TypeScript" />
+          <SiReact title="React" />
+          <SiNextdotjs title="Next.js" />
+          <SiTailwindcss title="Tailwind CSS" />
+          <SiSass title="Sass" />
         </div>
       </div>
     </section>

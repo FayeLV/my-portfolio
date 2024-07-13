@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./Navbar.module.css";
+import "./Navbar.css";
 import Logo from "../../assets/nav/menuIcon.png";
 import Close from "../../assets/nav/closeIcon.png";
 
@@ -7,36 +7,37 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className={styles.navbar}>
-      <a className={styles.title} href="/">
-        Faye.dev
+    <nav className="navbar">
+      <a className="title" href="/">
+        Faye.div
       </a>
-      <div className={styles.menu}>
+      <div className="menu">
         <img
-          className={styles.menuBtn}
+          className="menuBtn"
           src={menuOpen ? Close : Logo}
           alt="menu-button"
           onClick={() => setMenuOpen(!menuOpen)}
         />
         <ul
-          className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
+          className={`menuItems ${menuOpen ? "menuOpen" : ""}`}
           onClick={() => setMenuOpen(false)}
         >
           <li>
-            <a href="#about">About</a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="#experience">Experience</a>
+            <a href="#about">About</a>
           </li>
           <li>
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#about">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
   );
 };
+
 export default Navbar;
