@@ -62,8 +62,9 @@ const Projects = () => {
             imgAlt="Coindom Crypto Search"
             projectTitle="coindom 🪙"
             projectDesc="Coindom is a crypto app that allows users to search for information about various cryptocurrencies in real-time."
-            codeLink="https://github.com/stefvndev/coindom-crypto-search"
-            demoLink="https://coindom-crypto-search.vercel.app/"
+            codeLink="https://github.com/FayeLV/new-coin-hub?tab=readme-ov-file"
+            demoLink="https://fayelv.github.io/new-coin-hub/
+"
           />
         </div>
       </div>
