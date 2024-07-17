@@ -16,7 +16,7 @@ const Navbar = () => {
         <ul className={`menuItems ${menuOpen ? "menuOpen" : ""}`}>
           <li>
             <a href="/my-portfolio" onClick={handleMenuItemClick}>
-              About
+              Home
             </a>
           </li>
           <li>
