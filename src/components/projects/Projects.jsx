@@ -47,7 +47,7 @@ const Projects = () => {
     <section id="projects" className={styles.container}>
       <div className={styles.content}>
         <span className={styles.projectTitle}>portfolio</span>
-        <h3>Each project is a unique piece of development 🧩</h3>
+        <h3>Each project is a unique piece of development</h3>
         <div className={styles.projects}>
           <ProjectItem
             imgSrc={Car}
@@ -60,13 +60,14 @@ const Projects = () => {
           <ProjectItem
             imgSrc={Coin}
             imgAlt="Coindom Crypto Search"
-            projectTitle="coindom 🪙"
+            projectTitle="Coindom 🪙"
             projectDesc="Coindom is a crypto app that allows users to search for information about various cryptocurrencies in real-time."
             codeLink="https://github.com/FayeLV/new-coin-hub?tab=readme-ov-file"
             demoLink="https://fayelv.github.io/new-coin-hub/
 "
           />
         </div>
+        <h1 className={styles.newProject}>New projects coming soon.. </h1>
       </div>
     </section>
   );

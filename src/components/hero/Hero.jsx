@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Hero.module.css";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+
 import {
   SiHtml5,
   SiCss3,
@@ -14,18 +15,16 @@ import {
 
 const Hero = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="hero">
       <div className={styles.content}>
         <div className={styles.heroMain}>
           <h1>
-            Front-End React Developer{" "}
+            Full-Stack Developer{" "}
             <span role="img" aria-label="wave">
               👋
             </span>
           </h1>
-          <p>
-            Hi, I'm Faye. A passionate Front-end React Developer based in Texas.
-          </p>
+          <p>Hi, I'm Faye. A passionate Full-Stack Developer based in Texas.</p>
           <div className={styles.socialLinks}>
             <a
               aria-label="linkedin"

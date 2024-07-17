@@ -2,7 +2,8 @@
 
 /* Container Styles */
 .container {
-  max-width: 880px;
+  max-width: 968px;
+  padding: 0 40px;
   margin: auto;
   margin-top: 10rem;
   margin-bottom: 5rem;
@@ -29,6 +30,7 @@
   line-height: 1.2;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  font-weight: (--font-semi-bold);
 }
 
 .heroMain p {
@@ -45,9 +47,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  box-shadow: inset 0 0 0 9px rgb(255, 255, 255 / 30%);
-  order: 1;
-  justify-self: center;
+  /* order: 1; */
   width: 400px;
   height: 300px;
   border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
@@ -64,19 +64,27 @@
   font-weight: 400;
   cursor: pointer;
   display: flex;
+  align-items: center;
   gap: 1.3rem;
   color: var(--title-color);
 }
 
 .techStack {
   display: flex;
-  justify-content: center;
 }
 
 .techStack span {
   display: flex;
   align-items: center;
-  margin-right: 16px;
+  justify-content: center;
+  gap: 1rem;
+  margin: 16px;
+  color: var(--title-color);
+  font-weight: (--font-semi-bold);
+}
+
+.icons {
+  display: flex;
 }
 
 .waveEmoji {
@@ -86,6 +94,7 @@
 .icons {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .icons svg {
@@ -106,7 +115,7 @@
 }
 
 /* Media Query for Small Screens */
-@media screen and (max-width: 830px) {
+/* @media screen and (max-width: 830px) {
   .container {
     padding: 10% 10% 0 10%;
   }
@@ -118,10 +127,58 @@
 
   .heroImg {
     margin: auto;
-    width: 100%;
+    width: 50%;
   }
 
   .heroMain {
     padding: 1rem 0;
+  }
+} */
+
+/* Small Screens */
+@media screen and (max-width: 830px) {
+  .container {
+    padding: 10% 10% 0 10%;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  .content {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .heroMain {
+    padding: 1rem 0;
+  }
+
+  .heroMain h1 {
+    font-size: 2rem;
+  }
+
+  .heroMain p {
+    font-size: 0.875rem;
+  }
+
+  .heroImg {
+    margin: auto;
+    width: 70%;
+  }
+
+  .techStack {
+    flex-direction: column;
+  }
+
+  .techStack span {
+    align-items: flex-start;
+  }
+
+  .socialLinks,
+  .icons {
+    justify-content: center;
+  }
+
+  .icons {
+    gap: 0.5rem;
   }
 }

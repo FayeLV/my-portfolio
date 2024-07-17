@@ -3,15 +3,17 @@
 
 /* Styling for the main container */
 .container {
+  max-width: 968px;
+  padding: 0 40px;
   background-color: var(--color-primary);
   padding-top: 4rem;
+  margin: auto;
 }
 
 .content {
   display: flex;
   flex-direction: column;
   margin: auto;
-  max-width: 980px;
 }
 
 .projectTitle {
@@ -31,7 +33,7 @@
 }
 
 .projects {
-  max-width: 980px;
+  max-width: 968px;
   width: 100%;
   padding: 4rem 0;
 }
@@ -54,9 +56,10 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.projectImage {
-  width: 100%;
-}
+/* .projectImage {
+  flex: 1;
+  width: 600px;
+} */
 
 .itemsImg:hover .projectImage {
   display: flex;
@@ -64,7 +67,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  animation: slideUpDown 10s ease-in-out infinite;
+  animation: slideUpDown 16s ease-in-out infinite;
 }
 
 /* Keyframes for hover animation */
@@ -79,14 +82,14 @@
 }
 
 .itemsText {
-  display: flex;
+  flex: 1;
   flex-direction: column;
   padding: 2rem 0;
 }
 
-.itemTextBox {
+/* .itemTextBox {
   flex: 1;
-}
+} */
 
 .itemsText h3 {
   color: var(--color-secondary);
@@ -118,16 +121,6 @@
   justify-content: space-evenly;
   margin-top: 1.5rem;
 }
-/* 
-.links a {
-  background-color: var(--color-bg);
-  color: var(--title-color);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  font-weight: 600;
-  padding: 0.5rem;
-  width: 120px;
-  text-align: center;
-} */
 
 .links a {
   background-color: var(--color-bg);
@@ -145,6 +138,11 @@
 .links a:hover {
   background-color: var(--text-color);
   color: var(--container-color);
+}
+
+.newProject {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 830px) {

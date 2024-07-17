@@ -8,7 +8,8 @@ footer {
 }
 
 .container {
-  max-width: 980px;
+  max-width: 968px;
+  padding: 0 40px;
   width: 100%;
   margin: 0 auto;
 }

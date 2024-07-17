@@ -19,3 +19,10 @@ ul {
 h1 {
   font-family: "Mulish", sans-serif;
 }
+
+.container {
+  max-width: 968px;
+  background-color: pink;
+  margin-left: auto;
+  margin-right: auto;
+}

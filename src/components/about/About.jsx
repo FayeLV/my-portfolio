@@ -11,7 +11,7 @@ const About = () => {
         </div>
         <div className={styles.textSide}>
           <h3>About me</h3>
-          <h4>A dedicated Front-end Developer 📍</h4>
+          <h4>A dedicated Front-end Developer</h4>
           <p>
             As a Full-stack Developer with a B.S. in Computer Science, I possess
             a comprehensive set of skills in HTML, CSS, JavaScript, React, Java,

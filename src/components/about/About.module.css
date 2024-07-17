@@ -2,9 +2,10 @@
 
 /* Styles for the Container */
 .container {
-  padding: 150px 0;
+  padding: 150px 40px;
   background-color: var(--container-color);
   margin: auto;
+  max-width: 968px;
 }
 
 .content {
