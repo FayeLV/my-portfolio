@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <h1 className="title">Faye.div</h1>
+      <h1 className="title">Faye.Dev</h1>
 
       <div className="menu">
         <ul className={`menuItems ${menuOpen ? "menuOpen" : ""}`}>

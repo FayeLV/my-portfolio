@@ -13,15 +13,17 @@ const About = () => {
           <h3>About me</h3>
           <h4>A dedicated Front-end Developer</h4>
           <p>
-            As a Full-stack Developer with a B.S. in Computer Science, I possess
-            a comprehensive set of skills in HTML, CSS, JavaScript, React, Java,
-            Python, Spring Boot, SQL, and Git. I excel in designing and
-            maintaining responsive websites that offer a seamless user
-            experience. My expertise lies in crafting dynamic and engaging
-            interfaces through writing clean, optimized code and utilizing
-            cutting-edge development tools and techniques. I am also a team
-            player who thrives on collaborating with cross-functional teams to
-            produce outstanding applications.
+            Full-stack Developer with a B.S. in Computer Science, specializing
+            in frontend development. Experienced in creating responsive and
+            user-friendly web applications using React, HTML, CSS, and
+            JavaScript. With a background in graphic design, I excel at
+            designing intuitive and visually appealing user interfaces. Also
+            proficient in backend development with Java and Spring Boot,
+            allowing me to build complete and scalable applications. Certified
+            in ITIL® Foundation and Linux Essentials, skilled in improving
+            system performance and setting up CI/CD pipelines. A strong team
+            player who thrives in Agile environments, continuously learning and
+            applying new technologies.
           </p>
         </div>
       </div>

@@ -5,7 +5,6 @@
   padding: 150px 40px;
   background-color: var(--container-color);
   margin: auto;
-  max-width: 968px;
 }
 
 .content {
@@ -29,7 +28,7 @@
   border-radius: 1.7rem;
   width: 100%;
   object-fit: cover;
-  height: 350px;
+  height: 400px;
 }
 
 .textSide {
@@ -54,7 +53,7 @@
 }
 
 .textSide p {
-  color: #767676;
+  color: var(--text-color);
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;

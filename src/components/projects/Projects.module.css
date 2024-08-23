@@ -45,21 +45,19 @@
   height: 28rem;
   background-color: var(--color-bg);
   border-radius: 1.7rem;
-  padding: 1rem;
+  padding: 1.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--container-color);
 }
 
 .itemsImg {
   border-radius: 1.7rem;
+  height: 100%;
+  width: 500rem;
   overflow: hidden;
   margin-right: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-/* .projectImage {
-  flex: 1;
-  width: 600px;
-} */
 
 .itemsImg:hover .projectImage {
   display: flex;
@@ -82,14 +80,11 @@
 }
 
 .itemsText {
-  flex: 1;
+  display: flex;
   flex-direction: column;
   padding: 2rem 0;
+  height: 27rem;
 }
-
-/* .itemTextBox {
-  flex: 1;
-} */
 
 .itemsText h3 {
   color: var(--color-secondary);
@@ -99,21 +94,12 @@
 }
 
 .itemsText p {
-  color: #767676;
+  overflow: hidden;
+  flex-grow: 1;
+  color: var(--text-color);
   font-size: 1.2rem;
   font-weight: 500;
-}
-
-.stack {
-  display: flex;
-  justify-content: center;
-}
-
-.stack span {
-  background-color: var(--color-bg);
-  font-weight: 600;
-  padding: 0 1.3rem;
-  color: var(--color-secondary);
+  height: 16rem;
 }
 
 .links {
@@ -127,28 +113,41 @@
   color: var(--title-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-weight: 600;
-  padding: 0.5rem;
+  padding: 0.8rem;
   width: 120px;
   text-align: center;
   display: inline-block;
+  border-radius: 0.4rem;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
 }
 
+.links a:first-child {
+  margin-right: 1.5rem;
+}
+
 .links a:hover {
-  background-color: var(--text-color);
-  color: var(--container-color);
+  background-color: var(--body-color);
+  color: var(--text-color);
 }
 
 .newProject {
+  margin: 5rem;
   text-align: center;
-  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 830px) {
+  .projectTitle,
+  .content h3,
+  .itemsText h3,
+  .itemsText p {
+    margin-bottom: 1rem;
+  }
+
   .container {
     padding: 1rem;
     text-align: center;
+    width: 100%;
   }
 
   .projects {
@@ -158,17 +157,39 @@
   }
 
   .projectItems {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    gap: 1rem;
     height: 45rem;
   }
 
   .itemsImg {
-    margin: auto;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-right: 0;
+    overflow: hidden;
   }
 
   .itemsText {
-    padding-top: 3rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .itemsText p {
+    height: auto;
+    margin: 0;
+  }
+
+  .links {
+    padding-top: 10px;
+  }
+
+  .newProject {
+    margin: 3rem;
+    text-align: center;
   }
 }

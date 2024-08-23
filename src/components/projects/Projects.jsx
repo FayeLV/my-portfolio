@@ -26,16 +26,16 @@ const ProjectItem = ({
       <div className={styles.itemTextBox}>
         <h3>{projectTitle}</h3>
         <p>{projectDesc}</p>
-      </div>
-      <div className={styles.linksBox}>
-        <div className={styles.links}>
-          <a target="_blank" href={codeLink} rel="noreferrer">
-            Code <i className="fa-brands fa-github"></i>
-          </a>
-          <a target="_blank" href={demoLink} rel="noreferrer">
-            Live Demo{" "}
-            <i className="fa-solid fa-arrow-up-right-from-square link-icon"></i>
-          </a>
+        <div className={styles.linksBox}>
+          <div className={styles.links}>
+            <a target="_blank" href={codeLink} rel="noreferrer">
+              Code <i className="fa-brands fa-github"></i>
+            </a>
+            <a target="_blank" href={demoLink} rel="noreferrer">
+              Live Demo{" "}
+              <i className="fa-solid fa-arrow-up-right-from-square link-icon"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -63,12 +63,11 @@ const Projects = () => {
             projectTitle="Coindom 🪙"
             projectDesc="Coindom is a crypto app that allows users to search for information about various cryptocurrencies in real-time."
             codeLink="https://github.com/FayeLV/new-coin-hub?tab=readme-ov-file"
-            demoLink="https://fayelv.github.io/new-coin-hub/
-"
+            demoLink="https://fayelv.github.io/new-coin-hub/"
           />
         </div>
-        <h1 className={styles.newProject}>New projects coming soon.. </h1>
       </div>
+      <h1 className={styles.newProject}>New projects coming soon.. </h1>
     </section>
   );
 };

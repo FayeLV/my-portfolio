@@ -27,15 +27,6 @@ const Hero = () => {
           <p>Hi, I'm Faye. A passionate Full-Stack Developer based in Texas.</p>
           <div className={styles.socialLinks}>
             <a
-              aria-label="linkedin"
-              rel="noreferrer"
-              target="_blank"
-              href="https://www.linkedin.com/in/faye-lyu-79a822147/"
-            >
-              <FaLinkedin />
-            </a>
-
-            <a
               aria-label="github"
               rel="noreferrer"
               target="_blank"

@@ -11,14 +11,6 @@ const Footer = () => {
           <div className={styles.socialLinks}>
             <div className={styles.socialIcons}>
               <a
-                aria-label="LinkedIn"
-                rel="noreferrer"
-                target="_blank"
-                href="https://www.linkedin.com/in/faye-lyu-79a822147/"
-              >
-                <FaLinkedin className={styles.icon} />
-              </a>
-              <a
                 aria-label="GitHub"
                 rel="noreferrer"
                 target="_blank"
