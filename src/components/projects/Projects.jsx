@@ -85,11 +85,10 @@ const Projects = () => {
     <div className={styles.itemsText}>
       <div className={styles.itemTextBox}>
         <h3>Doctor Appointment App 🩺</h3>
-        <p className={styles.text_para}   style={{
-    lineHeight: "1"}}>
+        <span>
           A doctor appointment web application that allows users to book
           appointments with doctors easily and efficiently.
-        </p>
+        </span>
         <div className={styles.linksBox}>
           <div className={styles.links}>
             <a
