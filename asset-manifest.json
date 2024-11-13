@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.46047a66.css",
+    "main.js": "/static/js/main.d6d46d71.js",
+    "static/js/787.f15935ec.chunk.js": "/static/js/787.f15935ec.chunk.js",
+    "static/media/coindom-full.png": "/static/media/coindom-full.c5fef9ca2f47e52897f8.c5fef9ca2f47e52897f8.png",
+    "static/media/car-rental-full.webp": "/static/media/car-rental-full.c58b37da333d73238fdd.c58b37da333d73238fdd.webp",
+    "static/media/heroImage.png": "/static/media/heroImage.8c7bc5fa279d4678be56.png",
+    "index.html": "/index.html",
+    "main.46047a66.css.map": "/static/css/main.46047a66.css.map",
+    "main.d6d46d71.js.map": "/static/js/main.d6d46d71.js.map",
+    "787.f15935ec.chunk.js.map": "/static/js/787.f15935ec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.46047a66.css",
+    "static/js/main.d6d46d71.js"
+  ]
+}

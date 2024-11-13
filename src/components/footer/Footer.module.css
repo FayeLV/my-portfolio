@@ -1,0 +1,52 @@
+/* @import "../../vars.css"; */
+
+/* Footer Styles */
+footer {
+  width: 100%;
+  background-color: #2d2e32;
+  padding: 5rem 0;
+}
+
+.container {
+  max-width: 968px;
+  padding: 0 40px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.content h3 {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.socialIcons {
+  padding-top: 8px;
+}
+
+.socialLinks a {
+  color: #fff;
+  padding-left: 15px;
+  font-size: 1.2rem;
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 830px) {
+  footer {
+    padding: 2.5rem 1rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}

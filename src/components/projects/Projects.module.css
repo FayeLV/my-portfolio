@@ -1,0 +1,195 @@
+/* Import variables from vars.css */
+@import "../../vars.css";
+
+/* Styling for the main container */
+.container {
+  max-width: 968px;
+  padding: 0 40px;
+  background-color: var(--color-primary);
+  padding-top: 4rem;
+  margin: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.projectTitle {
+  color: var(--title-color);
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.content h3 {
+  color: var(--color-text);
+  font-size: 1.5rem;
+  line-height: 1.1;
+  font-family: Poppins, sans-serif;
+  margin-bottom: 2rem;
+}
+
+.projects {
+  max-width: 968px;
+  width: 100%;
+  padding: 4rem 0;
+}
+
+.projectItems {
+  display: flex;
+  margin-bottom: 4rem;
+  gap: 1rem;
+  height: 28rem;
+  background-color: var(--color-bg);
+  border-radius: 1.7rem;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--container-color);
+}
+
+.itemsImg {
+  border-radius: 1.7rem;
+  height: 100%;
+  width: 500rem;
+  overflow: hidden;
+  margin-right: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.itemsImg:hover .projectImage {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  animation: slideUpDown 16s ease-in-out infinite;
+}
+
+/* Keyframes for hover animation */
+@keyframes slideUpDown {
+  0%,
+  100% {
+    transform: translateY(0%);
+  }
+  25% {
+    transform: translateY(-78%);
+  }
+}
+
+.itemsText {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  height: 27rem;
+}
+
+.itemsText h3 {
+  color: var(--color-secondary);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.itemsText p {
+  overflow: hidden;
+  flex-grow: 1;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  height: 16rem;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1.5rem;
+}
+
+.links a {
+  background-color: var(--color-bg);
+  color: var(--title-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  padding: 0.8rem;
+  width: 120px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.links a:first-child {
+  margin-right: 1.5rem;
+}
+
+.links a:hover {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+.newProject {
+  margin: 5rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 830px) {
+  .projectTitle,
+  .content h3,
+  .itemsText h3,
+  .itemsText p {
+    margin-bottom: 1rem;
+  }
+
+  .container {
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 1rem;
+  }
+
+  .projectItems {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    gap: 1rem;
+    height: 45rem;
+  }
+
+  .itemsImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-right: 0;
+    overflow: hidden;
+  }
+
+  .itemsText {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .itemsText p {
+    height: auto;
+    margin: 0;
+  }
+
+  .links {
+    padding-top: 10px;
+  }
+
+  .newProject {
+    margin: 3rem;
+    text-align: center;
+  }
+}

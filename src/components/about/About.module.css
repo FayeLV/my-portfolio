@@ -1,0 +1,83 @@
+/* @import "../../vars.css"; */
+
+/* Styles for the Container */
+.container {
+  padding: 150px 40px;
+  background-color: var(--container-color);
+  margin: auto;
+}
+
+.content {
+  display: flex;
+  max-width: 980px;
+  width: 100%;
+  gap: 3rem;
+  margin: auto;
+  align-items: center;
+}
+
+.imgSide {
+  flex: 1;
+  width: 100%;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+.imgSide img {
+  border-radius: 1.7rem;
+  width: 100%;
+  object-fit: cover;
+  height: 400px;
+}
+
+.textSide {
+  flex: 1;
+  color: var(--color-text);
+}
+
+.textSide h3 {
+  color: var(--color-secondary);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.textSide h4 {
+  color: var(--title-color);
+  font-size: 1.5rem;
+  line-height: 1.1;
+  font-family: Poppins, sans-serif;
+  margin-bottom: 0.8rem;
+}
+
+.textSide p {
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 830px) {
+  .container {
+    padding: 50px 0;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .imgSide {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .textSide {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

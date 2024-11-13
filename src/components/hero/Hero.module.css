@@ -1,0 +1,163 @@
+@import "../../vars.css";
+
+/* Container Styles */
+.container {
+  max-width: 968px;
+  padding: 0 40px;
+  margin: auto;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  background-color: var(--color-primary);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 980px;
+  width: 100%;
+  margin: auto;
+  align-content: center;
+  gap: 6rem;
+}
+
+.heroMain {
+  padding-bottom: 5rem;
+}
+
+.heroMain h1 {
+  color: var(--title-color);
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-weight: (--font-semi-bold);
+}
+
+.heroMain p {
+  color: var(--color-text);
+  font-family: Mulish, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.heroImg {
+  background-image: url(../../assets/Female-profile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 300px;
+  border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  animation: morph 8s ease-in-out infinite 1s;
+}
+
+.socialLinks a {
+  color: inherit;
+}
+
+.socialLinks,
+.icons {
+  font-size: 2.5rem;
+  font-weight: 400;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+  color: var(--title-color);
+}
+
+.techStack {
+  display: flex;
+}
+
+.techStack span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 16px;
+  color: var(--title-color);
+  font-weight: (--font-semi-bold);
+}
+
+.icons {
+  display: flex;
+}
+
+.waveEmoji {
+  font-size: 2.5rem;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.icons svg {
+  font-size: 3rem;
+}
+
+/* Animation Keyframes */
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+/* Small Screens */
+@media screen and (max-width: 830px) {
+  .container {
+    padding: 10% 10% 0 10%;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  .content {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .heroMain {
+    padding: 1rem 0;
+  }
+
+  .heroMain h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .heroMain p {
+    font-size: 0.875rem;
+  }
+
+  .heroImg {
+    margin: auto;
+    width: 70%;
+  }
+
+  .techStack {
+    flex-direction: column;
+  }
+
+  .techStack span {
+    align-items: flex-start;
+  }
+
+  .socialLinks,
+  .icons {
+    justify-content: center;
+  }
+
+  .icons {
+    gap: 0.5rem;
+  }
+}

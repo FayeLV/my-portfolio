@@ -1,0 +1,119 @@
+/* Import variables from vars.css */
+@import "../../vars.css";
+
+/* Styling for the navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  padding: 1rem 5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  background-color: var(--container-color);
+  color: var(--title-color);
+  font-size: var(--normal-font-size);
+  z-index: var(--z-fixed);
+}
+
+.title {
+  font-size: var(--h3-font-size);
+  font-weight: 900;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--title-color);
+}
+
+.menu {
+  display: flex;
+}
+
+.menuItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+.menuBtn {
+  display: none;
+}
+
+.menuItems a {
+  display: block;
+  color: var(--color-text);
+  font-weight: var(--font-semi-bold);
+  font-size: var(--normal-font-size);
+  padding: 10px 0; /* Adjust padding to ensure vertical centering */
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.menuItems a:hover {
+  background-color: var(--body-color);
+  padding: 10px;
+}
+
+.menuToggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  width: 2.25rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.menuToggle span {
+  width: 100%;
+  height: 4px;
+  margin: 2px;
+  background-color: black;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 830px) {
+  .navbar {
+    padding: 1rem 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: var(--container-color);
+  }
+
+  .menuItems {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    padding: 30px 40px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+
+  .menuOpen {
+    display: flex;
+    width: 100%;
+  }
+
+  .navbar .menuToggle {
+    display: flex;
+  }
+
+  .menuBtn {
+    display: none;
+  }
+}
