@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.caabdd02.css",
+    "main.js": "/my-portfolio/static/js/main.2e81a398.js",
+    "static/js/787.f15935ec.chunk.js": "/my-portfolio/static/js/787.f15935ec.chunk.js",
+    "static/media/Doctors-Appoinment-Demo.mp4": "/my-portfolio/static/media/Doctors-Appoinment-Demo.e05a1bed3dace047fcb8.mp4",
+    "static/media/coindom-full.png": "/my-portfolio/static/media/coindom-full.c5fef9ca2f47e52897f8.c5fef9ca2f47e52897f8.png",
+    "static/media/car-rental-full.webp": "/my-portfolio/static/media/car-rental-full.c58b37da333d73238fdd.c58b37da333d73238fdd.webp",
+    "static/media/Female-profile.jpg": "/my-portfolio/static/media/Female-profile.1b96e47bc88562b598b8.jpg",
+    "static/media/work1.jpg": "/my-portfolio/static/media/work1.321b4ae3bf404acdfdc6.jpg",
+    "index.html": "/my-portfolio/index.html",
+    "main.caabdd02.css.map": "/my-portfolio/static/css/main.caabdd02.css.map",
+    "main.2e81a398.js.map": "/my-portfolio/static/js/main.2e81a398.js.map",
+    "787.f15935ec.chunk.js.map": "/my-portfolio/static/js/787.f15935ec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.caabdd02.css",
+    "static/js/main.2e81a398.js"
+  ]
+}
